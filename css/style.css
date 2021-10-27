@@ -247,6 +247,36 @@ main {
 .container-img:hover .hidden {
   visibility: visible;
 }
+/* Footer */
+.bar {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  bottom: 0;
+  background-color: #282828;
+  justify-content: space-between;
+}
+
+.detail {
+  align-items: center;
+}
+
+.album {
+  padding: 25px 10px;
+}
+
+img.playing {
+  height: 50px;
+}
+
+.underline:hover {
+  text-decoration: underline;
+}
+
+.interactions li {
+  margin: 5px 10px;
+}
+
 /* Responsive */
 @media screen and (max-width: 1024px) {
   .row .column-bis {
