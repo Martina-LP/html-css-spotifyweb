@@ -256,7 +256,7 @@ main {
   background-color: #282828;
   justify-content: space-between;
 }
-
+/* Left */
 .detail {
   align-items: center;
 }
@@ -275,6 +275,57 @@ img.playing {
 
 .interactions li {
   margin: 5px 10px;
+}
+/* Middle */
+.console {
+  width: 50%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.icons ul {
+  text-align: center;
+}
+
+.icons .fas {
+  font-size: 18px;
+}
+
+.icons .far {
+  font-size: 28px;
+}
+
+.icons li {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.timing {
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #A3A3A3;
+  margin: 0 20px;
+}
+
+.timing-color {
+  position: relative;
+  width: 25%;
+  height: 3px;
+  background-color: #A3A3A3;
+}
+
+.playbar {
+  justify-content:center;
+  align-items:center;
+}
+
+.dropper {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
 }
 
 /* Responsive */
