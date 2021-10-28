@@ -34,7 +34,6 @@ main {
   width: 240px;
   height: 100%;
   flex-direction: column;
-  justify-content: space-between;
   padding: 15px 15px 5px 15px;
   background-color: black; 
 }
@@ -85,9 +84,8 @@ main {
   display: inline;
 }
 
-.subtitle {
+.subtitle, .first-button, .options li, .text {
   font-size: 12px;
-  font-weight: bold;
 }
 
 .profile {
@@ -112,7 +110,7 @@ main {
   margin: 20px 0;
 }
 
-.column .create {
+.column .create, .icons .fas {
   font-size: 18px;
 }
 
@@ -156,11 +154,9 @@ main {
 
 .first-container {
   justify-content: flex-end;
-  align-items: center;
 }
 /* Upper right button */
 .first-button {
-  font-size: 12px;
   margin-right: 20px;
   padding: 12px 20px;
   border: 1px solid white;
@@ -196,7 +192,6 @@ main {
 
 .options li {
   margin: 10px 8px;
-  font-size: 12px;
 }
 
 .relative {
@@ -213,7 +208,7 @@ main {
   transform: translate(-50%, 5px);
 }
 /* Rows */
-.row, .second-container h3, .second-container p {
+.row, .second-container h3, .second-container p, .icons li {
   margin: 10px;
 }
 
@@ -228,10 +223,6 @@ main {
 
 .second-container img {
   width: 100%;
-}
-
-.container-img {
-  position: relative;
 }
 
 .player {
@@ -254,10 +245,13 @@ main {
   color: white;
   transform: translate(-50%, -50%);
   z-index: 5;
+}
+
+.player i, .icons li, .details i:hover, .playbar:hover .dropper, .volume:hover .dropper {
   cursor: pointer;
 }
 
-.container-img:hover .hidden {
+.container-img:hover .hidden, .playbar:hover .dropper, .volume:hover .dropper {
   visibility: visible;
 }
 /* Footer */
@@ -267,10 +261,9 @@ main {
   height: 100px;
   bottom: 0;
   background-color: #282828;
-  justify-content: space-between;
 }
 /* Left */
-.details {
+.details, .first-container, .playbar, .audio {
   align-items: center;
 }
 
@@ -286,13 +279,8 @@ img.playing {
   text-decoration: underline;
 }
 
-.text {
-  font-size: 12px;
-}
-
 .interactions li {
   font-size: 22px;
-  margin: 5px 30px;
 }
 /* Middle */
 .console {
@@ -305,17 +293,8 @@ img.playing {
   text-align: center;
 }
 
-.icons .fas {
-  font-size: 18px;
-}
-
 .icons .far {
   font-size: 28px;
-}
-
-.icons li {
-  margin: 10px;
-  cursor: pointer;
 }
 
 .timing {
@@ -327,7 +306,6 @@ img.playing {
 }
 
 .timing-green {
-  position: relative;
   width: 18%;
   height: 3px;
   background-color: #A3A3A3;
@@ -335,7 +313,6 @@ img.playing {
 
 .playbar {
   justify-content: center;
-  align-items: center;
 }
 
 .dropper {
@@ -343,15 +320,13 @@ img.playing {
   top: 50%;
   left: 100%;
   transform: translate(-50%, -50%);
-  visibility: hidden;
 }
 /* Right */
-.audio {
+.audio, .column, .bar {
   justify-content: space-between;
-  align-items: center;
 }
 
-.audio .fas, .volume-bar {
+.audio .fas, .volume-bar, .interactions li {
   margin: 5px 10px;
 }
 
@@ -363,7 +338,6 @@ img.playing {
 }
 
 .volume-bar-green {
-  position: relative;
   width: 20%;
   height: 3px;
   background-color: #A3A3A3;
@@ -375,12 +349,6 @@ img.playing {
 
 .details i:hover {
   color: white;
-  cursor: pointer;
-}
-
-.playbar:hover .dropper, .volume:hover .dropper {
-  visibility: visible;
-  cursor: pointer;
 }
 
 .playbar:hover .timing-green, .volume:hover .volume-bar-green {
@@ -446,28 +414,15 @@ img.playing {
     height: 30px;
   }
 
-  .bar .data {
-    font-size: 10px;
+  .bar .data, .interactions li, .icons .fas, .playbar .played, .playbar .residual, .audio li {
+    font-size: 8px;
   }
 
   .interactions li {
     margin: 3px;
-    font-size: 12px;
   }
 
   .icons .far {
-    font-size: 20px;
-  }
-
-  .icons .fas {
-    font-size: 15px;
-  }
-
-  .playbar .played, .playbar .residual {
-    font-size: 10px;
-  }
-
-  .audio li {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
